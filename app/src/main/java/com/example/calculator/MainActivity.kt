@@ -63,10 +63,7 @@ class MainActivity : AppCompatActivity() {
                 val value = currentInput.toDouble()
                 val result = sqrt(value)
                 txtDisplay.text = result.toString()
-
-
                 addToHistory("√$value = $result")
-
                 currentInput = result.toString()
             }
         }
@@ -76,8 +73,6 @@ class MainActivity : AppCompatActivity() {
             operator = null
             firstNumber = null
             txtDisplay.text = ""
-
-
             historyContainer.removeAllViews()
         }
 
@@ -123,10 +118,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             txtDisplay.text = result.toString()
-
-
             addToHistory("${firstNumber} $operator $secondNumber = $result")
-
             currentInput = result.toString()
             operator = null
             firstNumber = null
